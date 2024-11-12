@@ -10,8 +10,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="m-auto max-w-3xl p-4 h-screen">
+    <html
+      lang="en"
+      className="bg-gradient-to-r from-background to-background-dark h-screen"
+      // className={`bg-[url(../assets/Wallpaper.webp)] bg-repeat bg-24`}
+    >
+      <body className="m-auto max-w-4xl p-4 h-screen">
         <header className="flex items-center justify-between">
           <div className="flex gap-3 items-center">
             <Image
@@ -25,15 +29,15 @@ export default function RootLayout({
           </div>
           <nav aria-label="Main navigation">
             <ul className="flex gap-4">
-              <NavButton text="Home" href="/" />
-              <NavButton text="About" href="/about" />
-              <NavButton text="Services" href="/services" />
-              <NavButton text="Contact" href="/contact" />
+              <NavButton text="About Me" href="/" />
+              <NavButton text="Projects" href="/projects" />
+              <NavButton text="Resume" href="/resume" />
+              <NavButton text="Education" href="/education" />
+              <NavButton text="Contact Me" href="/contact" />
             </ul>
           </nav>
         </header>
-
-        {children}
+        <main className="py-4">{children}</main>
       </body>
     </html>
   );

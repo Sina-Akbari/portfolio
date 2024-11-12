@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #ACD1E9;
-  --color-secondary: #C1DAD6;
-  --color-background: #F5FAFA;
+  --color-primary: #8ca6b8;
+  --color-secondary: #acd1e9;
+  --color-tertiary: #f28b82;
+  --color-background: #f5fafa;
+}
+
+::selection {
+  background-color: #6ea9d1;
+  color: #ffffff;
 }
